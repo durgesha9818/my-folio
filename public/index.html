@@ -4,19 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alan Michael Raj - Portfolio</title>
+    <title>Durgesha Dalvi - Portfolio</title>
     <style>
-        /* Your existing styles go here */
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Navbar Styling */
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #f5a623;
+        }
+
+        /* About Section */
+        .section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        #about {
+            text-align: center;
+            background-color: #fafafa;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-text h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .about-text p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .about-text a {
+            color: #f5a623;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Button Styling */
+        .about-text button {
+            padding: 12px 24px;
+            font-size: 1.2em;
+            background-color: #f5a623;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .about-text button:hover {
+            background-color: #e5941b;
+        }
+
+        /* Projects Section */
+        #projects {
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            border-left: 5px solid #f5a623;
+            padding-left: 15px;
+        }
+
+        /* Skills Section */
+        #skills {
+            background-color: #fafafa;
+        }
+
+        #skills ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        #skills li {
+            padding: 8px 0;
+            font-size: 1.1em;
+        }
+
+        /* Contact Section */
+        #contact {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #contact a {
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 2px solid #f5a623;
+            padding-bottom: 3px;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        #contact a:hover {
+            color: #f5a623;
+            border-color: #333;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
 
-<!-- The root div where React will mount -->
-<div id="root"></div> 
-
 <header>
     <div class="logo">
-        <img src="images/logo.jpeg" alt="Logo">
+        <img src="images/my_logo.png" alt="Logo" width="50">
     </div>
     <nav class="navbar">
         <ul>
@@ -31,28 +190,35 @@
 <div class="section" id="about">
   <h1>About Me</h1>
   <div class="about-container">
-      <img src="images/profile.jpeg" alt="Profile Picture" class="profile-img">
+      <img src="images/WhatsApp Image 2024-11-13 at 5.14.46 PM.jpeg" alt="Profile Picture" class="profile-img">
       <div class="about-text">
-          <h2>Hello! I'm Alan Michael Raj, a backend developer with a passion for building scalable and efficient systems</h3>
-          <h2>Connect with me on <a href="https://github.com/AlanMichaelRaj" target="_blank">GitHub</a>!</p>
-          <!-- Resume Download Button -->
-          <a href="Alan_Michael_Raj_Resume.pdf" download>
-              <button style="padding: 10px 20px; font-size: 1.2em; background-color: #f5a623; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                   Resume
-              </button>
+          <h1>Hello! I'm Durgesha Dalvi,</h1>
+          <p>I am a passionate data science enthusiast with a strong interest in turning raw data into actionable insights. I enjoy working with machine learning, deep learning, and data analysis techniques to solve complex problems. Constantly curious and driven to learn, I am dedicated to expanding my skills in data-driven decision-making and impactful applications.</p>
+          <p>Connect with me on <a href="https://github.com/durgesha9818" target="_blank">GitHub</a>!</p>
+          <a href="9818-Durgesha Dalvi Resume (2).pdf (1).pdf" download>
+              <button>Resume</button>
           </a>
       </div>
   </div>
 </div>
+
 <div class="section" id="projects">
     <h1>Projects</h1>
     <div class="project">
-        <h2>Project 1: Unified Museum Ticketing and User Experience Platform</h3>
-        <p>This project aims to create a seamless user experience...</p>
+        <h2>Project 1: Unified Museum Ticketing and User Experience Platform</h2>
+        <p>This project aims to create a seamless user experience, integrating ticketing and user engagement.</p>
     </div>
     <div class="project">
-        <h2>Project 2: Digital Waste Management Platform</h3>
-        <p>A platform designed for municipalities and communities to manage waste efficiently...</p>
+        <h2>Project 2: Digital Waste Management Platform</h2>
+        <p>A platform designed for municipalities and communities to manage waste efficiently.</p>
+    </div>
+    <div class="project">
+        <h2>Project 3: Data Analysis of Bank Data</h2>
+        <p>Analysis of given data and generating better visualizations for insights.</p>
+    </div>
+    <div class="project">
+        <h2>Project 4: Password-Based Door Lock System</h2>
+        <p>Developed a password-based door lock system using Arduino Uno, integrating an LCD and a keypad.</p>
     </div>
 </div>
 
@@ -62,24 +228,28 @@
     <ul>
         <li>Backend Development (Node.js, Express)</li>
         <li>Database Management (MongoDB, MySQL)</li>
-        <li>API Integration (REST, GraphQL)</li>
-        <li>Version Control (Git, GitHub)</li>
+        <li>API Integration</li>
+        <li>Data Science</li>
+        <li>Python</li>
+        <li>Frontend Development</li>
+        <li>Data Analysis</li>
     </ul>
     <h2>Non-Technical Skills</h2>
     <ul>
-        <li>Problem Solving</li>
-        <li>Team Collaboration</li>
-        <li>Project Management</li>
+        <li>Leadership</li>
+        <li>Critical Thinking</li>
+        <li>Teamwork</li>
+        <li>Creativity</li>
     </ul>
 </div>
 
 <div class="section" id="contact">
     <h1>Contact</h1>
-    <p>You can reach out to me at <a href="mailto:alanmichaelraj@gmail.com">alanmichaelraj@gmail.com</a></p>
+    <p>You can reach out to me at <a href="mailto:durgeshadalvi15@gmail.com">durgeshadalvi15@gmail.com</a></p>
 </div>
 
 <footer>
-   
+    &copy; 2024 Durgesha Dalvi | Built with ❤️
 </footer>
 
 </body>
